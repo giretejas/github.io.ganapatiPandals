@@ -1,0 +1,325 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  <style>
+	.navsection{
+		position:fixed;
+		top:0px;
+		left:0px;
+	}
+	.imageslider{
+		margin-top:200px;
+	}
+  </style>
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+    <!-- Required meta tags -->
+
+
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+	<script src="asset/js/project.js"></script>
+	<script src="assets/js/main.js"></script>
+	<link rel="stylesheet" href="{% static 'asset/css/style.css' %}">
+	  <link rel="stylesheet" href="{% static 'asset/css/pro.css' %}">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Index Page</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<!-- vishesh starting here -->
+
+	<img src="{% static 'asset/photos/logo.png' %}" style="width:200px;height: 50px;position: absolute;margin-top: 0.5px;" #imgvish" ><marquee style="background-color:#B0CB1F;height: 50px;font-size:30px;">Wishing you all Happy Ganesh Chathurthi <span style="font-size: 20px;">- I.T. VEDANT, Bangalore</span></marquee>
+
+
+	<!-- wishesh ending here -->
+
+	<!-- nav bar started here -->
+	<!--<div class="container-md">-->
+	<div class="row">
+		<div class="col-md-12 mt-3">
+			<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#5a5a5a;margin-top:-22px;">
+				<div class="container-fluid">
+					<a class="navbar-brand text-white" href="#"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link text-white active" aria-current="page" href="{% url 'index' %}">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'about' %}">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'visual' %}">Visual</a>
+							</li>
+							<!--
+							<li class="nav-item">
+								<a class="nav-link text-white" href="laptop.html">Places</a>
+							</li>-->
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'contact' %}">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'userregipage' %}">Register</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'login' %}">Login</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- nav bar end here -->
+
+		<div class="col-md-1 mt-3"></div>
+		<div class="col-md-4 mt-3">
+			<div class="card" style="width:100%;">
+				</br>
+				<img src="{% static 'asset/photos/gana1.jpg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+			</div>
+		</div>
+		<div class="col-md-6 mt-3">
+			<div class="card1" style="width:100%;">
+				<div>
+					<h2>About Ganesh Pandal</h2>
+					<p>
+						Ganesh Chaturthi, also called Vinayaka Chavithi, is an auspicious Hindu festival which is
+						celebrated for 10 days every year. The festival is celebrated in the Bhadra month as per
+						the Hindu calendar which generally falls in mid-August to September. It marks the birthday
+						of the beloved elephant-headed Lord Ganesha.
+					</p>
+					<p>
+						Ganesha is known as the God of wealth, sciences, knowledge, wisdom and prosperity, and that's
+						why most Hindus remember him and seek his blessings before starting any important work.
+						Lord Ganesh is known by 108 different names like Gajanana, Vinayaka, Vighnaharta among others.
+					</p>
+					<p>
+						This festival is celebrated with great devotion and joy by Hindus throughout the world.
+						In India, it is majorly celebrated in states including Maharashtra, Gujarat, Goa, Madhya
+						Pradesh, Karnataka, and Telangana.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-md-2 mt-3"></div>
+		<div class="col-md-6 mt-3" style="margin-lef:200px;">
+			<div class="card1" style="width:100%;">
+				<div style="margin-lef:-200px;">
+					<h2>History</h2>
+					<p>
+						Ganesha is the younger son of Lord Shiva and Parvati. There are various stories behind his birth but two of them are the most common ones.
+
+					</p>
+					<p>
+						According to the first story, Lord Ganesha was created by Parvati out of dirt from her body to guard her in the absence of Shiva. She gave him the
+						task of guarding her bathroom door while she took a bath. In the meantime, Shiva returned home and Ganesha, who didn't know who Shiva was, stopped
+						him. This angered Shiva and he severed Ganesha's head after a tiff between the two. Parvati was enraged when she came to know about this; Lord Shiva,
+ 						in turn, promised to get Ganesha back to life. The devas were sent to search for a child's head facing north but they could only find an elephant's
+						head. Shiva fixed the elephant's head on the child's body, and that how Ganesha was born.
+
+					</p>
+					<p>
+						The other popular story is that the Devas requested Shiva and Parvati to create Ganesha so that he can be a Vighnakarta (creator of obstacles) for
+						rakshasas (demons), thus being a Vighnaharta (averter of obstacles) and helping Devas.
+
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-md-4 mt-3">
+			<div class="card" style="width:100%;">
+				<img src="{% static 'asset/photos/9.png' %}" class="card-img-top" alt="..." height='450 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+			</div>
+		</div>
+
+
+		<div class="col-md-1 mt-3"></div>
+		<div class="col-md-4 mt-3">
+			<div class="card" style="width:100%;">
+				<img src="{% static 'asset/photos/gana.jpg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+			</div>
+		</div>
+		<div class="col-md-6 mt-3">
+			<div class="card1" style="width:100%;">
+				<div>
+					<h2>Importance of Ganesh Pandal</h2>
+					<p>
+						It is believed that devotees who pray to Ganesha are able to fulfil their wishes and desires. So, the main essence of Ganesh Chaturthi is that
+						devotees who pray to him are set free of sins and it leads them on the path of knowledge and wisdom.
+					</p>
+					<p>
+						Historically, the festival has been celebrated since the time of King Shivaji. It was during India's freedom struggle that Lokmanya Tilak changed
+						Ganesh Chaturthi from a private celebration to a grand public festival where people from all castes of the society can come together, pray and be united.
+					</p>
+					<p>
+						Over the years with growing environmental awareness, people have started celebrating Ganesh Chaturthi in an environmentally friendly way. This
+						includes-- getting Ganesha idols made of natural clay/ mitti and using only flowers and natural items for decorating the pandals.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-2 mt-3"></div>
+		<div class="col-md-6 mt-3">
+			<div class="card1" style="width:100%;">
+				<div>
+					<h2>Rituals</h2>
+					<p>
+						There are four main rituals which are performed during the 10-day long festival. They are namely-- Pranapratishhtha, Shhodashopachara,
+						Uttarpuja, and Ganpati Visarjan.
+
+					</p>
+					<p>
+						The excitement of Ganesh Chaturthi settles in weeks before the festival actually begins. Artisans start preparing clay idols of Ganesha in
+						different poses and sizes.
+					</p>
+					<p>
+						The Ganesha idols are installed in beautifully decorated 'pandal' at homes, temples or localities. The statue is also decorated with flowers,
+						garlands and lights. A ritual called Pranapratishhtha is observed where a priest chants mantra to invoke life in the diety.Prayers are then
+						offered to Ganesha's idol in 16 different ways. This ritual is called Shhodashopachara.
+					</p>
+					<p>
+
+						People celebrate by singing or playing religious songs, dancing to drum beats and by lighting up fireworks-- all of which add to the festive mood.
+					</p>
+					<p>
+						The Uttarpuja ritual is then performed which is about bidding farewell to Ganesha with deep respect. This is followed by Ganpati Visarjan, a ceremony wherein the statue is now immersed in water. While carrying the statue to the sea and while immersing it, people generally chant in the Marathi language 'Ganapati Bappa Morya, Purchya Varshi Laukariya' which means 'Goodbye Lord, please come back next year'.
+						While some devotees celebrate this festival at home, others pay their visit to Lord Ganesha at public pandals. People offer their due respect, prayers and offerings to Ganesha. Dishes like Lord Ganesha's favourite Modak, Pooran Poli, and Karanji are prepared for friends, family and visitors.
+
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 mt-3">
+			<div class="card" style="width:100%;">
+				<img src="{% static 'asset/photos/gana2.jpg' %}" class="card-img-top" alt="..." height='650 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+			</div>
+		</div>
+
+
+
+		<!-- whatsapp message start here -->
+
+<h1></br></h1>
+
+    <section class="cta" id="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+         <!-- <h3>Call To Action</h3> -->
+		  <h3>Contact Us in WhatsApp</h3>
+		  <h3>Have a matter to discuss?</h3>
+          <p>Would you like to learn more about what we do? Do you have a matter you would like to discuss? If so then please submit your response and we will contact you shortly</p>
+          <a class="cta-btn" href="https://api.whatsapp.com/send?phone=919072942825&text=hi"" style="text-decoration:none">Send Message</a>
+        </div>
+
+      </div>
+    </section>
+
+		<!-- whatsapp message end here -->
+
+
+
+		<div class="col-md-4 text-white ps-3" style="background-color:#000000;text-align:center;>
+			<p class="nav-item">
+				</br></br>
+				<a class="nav-link1 text-white" href="#" data-bs-toggle="modal" data-bs-target="#registerModal" style="text-decoration:none" id="ctafoot">Register New Account</a>
+			</p>
+			<p class="nav-item">
+				<a class="nav-link1 text-white" href="#" data-bs-toggle="modal" data-bs-target="#loginModal" style="text-decoration:none" id="ctafoot">Login</a>
+			</p>
+			<p><a href="https://www.facebook.com" i class="bi bi-facebook" style="text-decoration:none" id="ctafoot">face book</a></p>
+				<p><a href="https://www.instagram.com" i class="bi bi-instagram" style="text-decoration:none" id="ctafoot">instagram</a>
+			</p>
+		</div>
+		<div class="col-md-4 text-white ps-3" style="background-color:#000000;text-align:center;">
+			</br></br>
+			<h4>ItVedant Bangalore</h4>
+				<p>
+					Outer ring road</br>
+					BTM Layout</br>
+					Stage-2 Bangalore</br>
+				</p>
+		</div>
+
+		<div class="col-md-4 text-white ps-3" style="background-color:#000000;text-align:center;>
+			<ul>
+
+				<p><a href="#" style="text-decoration:none;color:white"></br></br></p>
+				<p><a href="#" style="text-decoration:none;color:white" id="ctafoot">Home</p>
+				<p><a href="{% url 'about' %}" style="text-decoration:none;color:white" id="ctafoot">About Us</p>
+				<p><a href="mobile.html" style="text-decoration:none;color:white" id="ctafoot">Products</p>
+				<p><a href="contact.html" style="text-decoration:none;color:white" id="ctafoot">Contact</p>
+
+			</ul>
+		</div>
+
+		<div class="col-md-12 text-white ps-3" style="background-color:#121d24;text-align:center;>
+			<ul>
+
+				<p><a href="#" style="text-decoration:none;color:white"></p>
+				<p><a href="#" style="text-decoration:none;color:white;background-color:#121d24;" id="ctafoot">© Copyright IT Vedant Bangalore. All Rights Reserved</p>
+				<p><a href="#" style="text-decoration:none;color:white;background-color:#121d24;" id="ctafoot">Designed Developed and Maintained by Hbct.in</p>
+
+
+			</ul>
+		</div>
+	</div>
+
+
+  </body>
+</html>

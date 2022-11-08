@@ -1,0 +1,485 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  <style>
+	.navsection{
+		position:fixed;
+		top:0px;
+		left:0px;
+	}
+	.imageslider{
+		margin-top:200px;
+	}
+  </style>
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+    <!-- Required meta tags -->
+
+
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+	<script src="asset/js/project.js"></script>
+	<script src="assets/js/main.js"></script>
+	<link rel="stylesheet" href="{% static 'asset/css/style.css' %}">
+	  <link rel="stylesheet" href="{% static 'asset/css/pro.css' %}">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Index Page</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<!-- vishesh starting here -->
+
+	<img src="{% static 'asset/photos/logo.png' %}" style="width:200px;height: 50px;position: absolute;margin-top: 0.5px;" #imgvish" ><marquee style="background-color:#B0CB1F;height: 50px;font-size:30px;">Wishing you all Happy Ganesh Chathurthi <span style="font-size: 20px;">- I.T. VEDANT, Bangalore</span></marquee>
+
+
+	<!-- wishesh ending here -->
+
+	<!-- nav bar started here -->
+	<!--<div class="container-md">-->
+	<div class="row">
+		<div class="col-md-12 mt-3">
+			<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#5a5a5a;margin-top:-22px;">
+				<div class="container-fluid">
+					<a class="navbar-brand text-white" href="#"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link text-white active" aria-current="page" href="{% url 'index' %}">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'about' %}">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'visual' %}">Visual</a>
+							</li>
+							<!--
+							<li class="nav-item">
+								<a class="nav-link text-white" href="laptop.html">Places</a>
+							</li>-->
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'contact' %}">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'userregipage' %}">Register</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-white" id="cta" href="{% url 'login' %}">Login</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- nav bar end here -->
+
+        <h1 style="text-align:center;background-color:blue;height:80px;padding-top:10px;color:#fff;margin-block-start: 0.67em;">Latest News</h1>
+
+		<!-- news start here -->
+
+
+
+		<!-- end news here -->
+
+<h1></br></h1>
+		<div class="row" style="border:none;">
+  <div class="col-2" >
+    <div id="list-example" class="list-group" style="position:fixed">
+      <a class="list-group-item list-group-item-action" href="#list-item-1" style="background-color:blue;color:#fff">News 1</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2" style="background-color:blue;color:#fff">News 2</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3" style="background-color:blue;color:#fff">News 3</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-4" style="background-color:blue;color:#fff">News 4</a>
+		<a class="list-group-item list-group-item-action" href="#list-item-5" style="background-color:blue;color:#fff">News 5</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-6" style="background-color:blue;color:#fff">News 6</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-7" style="background-color:blue;color:#fff">News 7</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-8" style="background-color:blue;color:#fff">News 8</a>
+		<a class="list-group-item list-group-item-action" href="#list-item-9" style="background-color:blue;color:#fff">News 9</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-10" style="background-color:blue;color:#fff">News 10</a>
+    </div>
+  </div>
+  <div class="col-10">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+      <h4 id="list-item-1">Something special and distinctive for this year’s Ganesh Chaturthi.</h4>
+		<h4 id="list-item-1">Ganesh Chaturthi 2022: The Aadhaar card contains a cut-out inside which an idol of the deity has been placed.</h4>
+
+		<div class="col-md-11 mt-3">
+			<div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/n1.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+
+      <p style="width:100%;" class="col-12">The artist, Sarav Kumar, said he was inspired by a pandal created in Kolkata with a Facebook theme and
+		  he wanted to create something special and distinctive for this year’s Ganesh Chaturthi.</p>
+			<p>Aadhaar Card for Ganesha: Jharkhand man creates unique pandal with a message
+
+
+
+A Jharkhand man’s innovative creation of a pandal in the shape of an Aadhaar card for Lord Ganesh has drawn the attention of locals.
+
+The artist, Sarav Kumar, said he was inspired by a pandal created in Kolkata with a Facebook theme and he wanted to create something special and distinctive for this year’s Ganesh Chaturthi.
+
+He said, "Once when I was visiting Kolkata, I saw a Facebook pandal. Since I do Ganesh puja, it came to my mind that I too should do something unique. Hence, I got the idea of this Aadhaar card pandal."
+On scanning the barcode present in the Aadhaar, a Google link for Lord Ganesha images opens up on the screen and an address along with an year of birth appear. Shree Ganesh S/o Mahadev, Kailash Parvat, Top Floor, Near, Mansarover, Lake, Kailash Pincode- 000001 and the date 01/01/600 CE. is what one gets to see.
+
+By building an Aadhaar card Ganesha pandal, Kumar said he hoped to convey a message about the need of establishing an identity for those who do not already have one.</p>
+
+
+			<h4 id="list-item-2">Hyderabad: Huge Rush of Devotees at Khairatabad Ganesh Pandal</h4>
+
+			<div class="col-md-12 mt-3">
+			<div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/n2.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+
+				<p>Ganesh Chaturthi is celebrated with zeal in Mumbai and Pune, with devotees travelling long distances to their favourite pandals to seek blessings from their favourite 'Ganpati Bappa.' The metros are back to full capacity for the festival after a two-year hiatus due to the COVID-19 pandemic.</p>
+
+
+      <p>Hyderabad: Huge Rush of Devotees at Khairatabad Ganesh Pandal
+
+Hyderabad: The crowd at Khairatabad is in sync with the size of Ganesh at the city's landmark pandal on Wednesday. Starting today, Devotees can have a glimpse of Maha Ganesh till the immersion day. Over two lakh pandals were set up across the city to celebrate nine-day festivitie.
+
+According to the Bhagyanagar Ganesh Utsava Samithi, pandals were set up in a mass scale this year. As per the data from three police commissionerates, Cyberabad, Hyderabad and Rachakonda,  there were 96,000 pandals. The number has increased by 30 percent this year.
+
+Traffic restrictions near Khairatabad Ganesh pandal and its surroundings will be in place till immersion as per the footfall of the devotees.
+
+The 50-feet tall idol made from clay will appear as Shri Panchamukha Mahalakshmi Ganapati while Tri Shakti Mahagayatri and Shanmukha Subramanya Swamy will appear on either side of Ganapati. For the first time in 60 years, the Khairatabad idol was made from clay keeping in view the Supreme Court verdict and guidance of Telangana government. The making of the idol started in June and 150 artisans were involved in making the statue at a cost of Rs 1.5 crore.</p>
+
+
+      <h4 id="list-item-3">Friendly Ganesh Idol Made Using 17,000 Coconuts In Hyderabad</h4>
+
+
+                <div class="col-md-12 mt-3">
+			<div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/n3.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+
+
+      <p>The organiser of the event, Mr. Kumar said an artist from Kerala travelled all the way to Hyderabad to adorn a Ganesh pandal made of coconuts</p>
+      <p>Hyderabad: As part of the Ganesh Chaturthi celebrations, an eco-friendly Ganesh idol is made using 17,000 coconuts, becoming a source of attraction, for people in Hyderabad. Speaking to ANI, Kumar, an Organiser said in Hyderabad city, the Ganesh pandal is exquisitely decked with various themes. An artist from Kerala travelled all the way to Hyderabad to adorn a Ganesh pandal made of coconuts.
+Ganesha which is built of coconut is really attacking the people of Hyderabad. I suggest everyone refrain from buying PoP idols. To have a safe environment around us, it is important for all of us to follow purchasing eco-friendly idols, Mr Kumar said.
+
+Different emotions are associated with the coconut among people. Coconuts are used on several occasions. In light of that, we made the Lord Ganesha idol with coconuts. We made this Ganesha using 17,000 coconuts and it took 8 days to complete this,” he said.
+
+Anoop, a resident of Lower Tank Bund inn Hyederabd said every year, the city promotes the environmentally friendly Ganesh idol, and tourists from other locations visit here to see the idol. Mr. Anoop said,
+Every year, Murali Anna from our neighbourhood erects the Ganesh pandals. He has been performing this for a while. We created a coconut-based Ganesha this year that is eco-friendly. We always place eco-friendly Ganesh idol here. A number of visitors from various regions of the city visit here to see this.
+
+Another devotee, Rajeshwar, advised people not to purchase Plaster of Paris idols, adding that it was crucial for everyone to utilize eco-friendly idols in order to protect the environment. Mr. Rajeshwar said,
+To save our country, we need to be part of the eco-friendly celebrations. I would suggest all people not to buy PoP idols.</p>
+
+                    <h4 id="list-item-4">Keshavji Naik Chawl in Girgaon: Mumbai’s oldest Ganpati pandal celebrates its 130th anniversary.
+.</h4>
+
+                <div class="col-md-12 mt-3">
+			<div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/n4.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+<p>As claimed by Shree Sarvajanik Ganeshutsav Sanstha, they hosted freedom fighter Lokmanya Bal Gangadhar Tilak in 1901</p>
+
+      <p>The streets are lit and abuzz with chants of Ganpati Bappa Morya in Ganeshutsav Sanstha at Keshavji Naik Chawl at Khadilkar Road in Girgaon in Mumbai has organised bigger celebrations this year as it is their 130th year of celebrations.
+
+It was in 1893 that Lokmanya Bal Gangadhar Tilak decided to hold celebrations of Ganesh Chaturthi as he saw it as a tool to unify the people against the British. Two of his followers who resided in Keshavji Naik chawl, Girgaon, were among the first to respond to Tilak*s call. The mandal is known for its traditional celebration without loudspeakers.
+
+As claimed by the mandal, they hosted freedom fighter Lokmanya Bal Gangadhar Tilak in 1901.
+
+The Sanstha*s website states that the Ganpati festival was celebrated as a public event during the reign of the Peshwas also. After the end of Peshwa rule, from 1818 to 1892 Ganeshotsav remained a family affair in Maharashtra, before Tilak restarted the practice. He had seen mass celebrations in the princely states of Baroda and Gwalior, which inspired him to do the same for Maharashtra.
+
+Known for its traditional and eco-friendly celebrations, the Ganpati pandal is set up in a small open space between two buildings of the Keshavji Naik Chawl. The idol has always been of two-feet height and is made by Rajendra More, a third-generation idol maker based in Girgaon.
+
+"It all started in 1893 after Lokmanya Bal Gangadhar Tilak gave a call for celebrating Ganeshotsav. And in 1901, Tilak visited the chawl during Ganeshotsav," Mangesh Pokale, vice-president of Shree Sarvajanik Ganeshutsav Sanstha, told Mid-Day.
+
+Since then, Ganeshotsav is celebrated in a traditional way in our chawl, he added.
+
+The residents ensured that the essence of the festival remained unchanged even as it grew in size and conduct.
+
+Speaking about eco-friendly Ganeshotsav, Pokale said, "The murti of Bappa is made of sadhu (clay) since it was established. Every year a new idol is made but of the size, pattern, design and height, which is two feet. The murti is made by Rajendra More, a third-generation idol maker based in Girgaon."
+
+While explaining how the mandal celebrated the festival during two years of the Covid-19 pandemic, Pokale said, "It was done very simply as compared to earlier years. We followed all government norms during the pandemic and celebrated Ganeshotsav. We even immersed the murti in an artificial pond that was setup in the chawl."
+
+The mandal is also known for following a traditional way of Visarjan. "We take Ganpati Bappa in a palkhi on Visarjan day. Everyone is dressed in traditional attire, along with traditional lejim and dhol-tasha," the vice-president of Shree Sarvajanik Ganeshotsav Sanstha said.
+
+But during the pandemic only 10-15 people brought the murti and even during the Visarjan only these people were present and it was done in the chawl itself, Pokale added.</p>
+
+
+
+                              <h4 id="list-item-5">Item 5</h4>
+
+
+                     <div class="col-md-12 mt-3">
+			<div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/n5.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+
+
+      <p>The box-cricket-themed Ganesh Pandal in Hyderabad's Begum Bazar is attracting many devotees. The unique theme of the pandal portrays Lord Ganesha playing cricket with Mushak and Nandi.</p>
+
+                         <p>Lord Ganesha playing cricket with Mushak and Nandi becomes a major hit among Hyderabad citizens
+
+Hyderabad: A variety of Ganesh idols can be seen across Hyderabad this festive season however, the box cricket-themed Ganesh idol in Hindi Nagar of Begum Bazar area which was installed by Bal Yuva Mandal is attracting most of the devotees this season.
+
+The Begum Bazar Ganesh idols have been a major attraction to the devotees every year, this year too people from all over the city are flocking to the area to see the various themes of Ganesh pandals here.
+Speaking to ANI, Akash Agarwal, the organiser of the cricket themed Ganesh pandal said, "Every year we install a variety of Ganesh idols. This year we have come up with this Box Cricket theme. We have installed Lord Ganesh's idol in which he is seen playing cricket. Lord Ganesh is batting, Mushak (Mouse) is bowling and Nandi is an umpire. Devotees coming here to see from different parts of the city as this is a weekend most of the people visit because of holidays."
+
+He further said that cricket bats and balls will be given as a gift to children who are visiting the pandal for the Darshan of the idol.
+"We have planned to distribute 5,000 bats and balls to children on visarjan day. Since 2009 we are installing Ganesh's idol here with different themes every year. For the awareness of people, we are installing a Ganesh idol made of clay from 2009 we are giving a massage to people about the pollution due to POP Ganesh. If we don't save the environment now in the coming future, there will be problems for the next generation of people," said Agarwal.
+
+Yesh Agarwal, a devotee who came to see the pandal said, "For the last 12 years I am coming here to Begum Bazar to see a variety of Ganesh idols. I have seen Lord Ganesh's idol made of paper, glass, and wide different varieties of idols we can see here. I along with my family come here every year to take the blessing of Lord Ganesh. Even I have noticed they make eco-friendly Ganesh idol here and it a good massage for the coming generation to save the environment."
+
+The auspicious occasion of the Ganesh festival which began with Ganesh Chaturthi on August 31 saw an enthusiastic start. The 10 days long festival will conclude on September 9 on Ananat Chaturdashi and will end with the final immersion of the Ganesha idols, known as the Visarjan.</p>
+
+
+
+
+                              <h4 id="list-item-6">Ganesh idol made of corn cobs draws crowds</h4>
+
+                          <div class="col-md-12 mt-3">
+			<div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/n6.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+
+
+      <p>The Ganesh idol made of corn cobs took 45 days for preparation and was installed at Somajiguda Basthi in Hyderabad. — DC Image</p>
+
+<p>Hyderabad: A Ganesh idol made of 6,201 corn cobs is installed at Somajiguda. After offering puja, the cobs will be distributed to devotees as prasadam, the
+organisers said on Monday.
+
+K. Ram Murthy, organiser of the Ganesh pandal at Somajiguda basthi, the corn
+cobs were procured from Ballari in Karnataka, and it took 45 days for a team
+of artists to complete the idol. First a frame was made with iron rods and
+then the corn cobs were stitched around the frame.
+
+Omkar from Ballari, the man behind the natural Ganesh idols, said the idols
+should be made only with clay. “If that is not happening, fruits and
+vegetables which Lord Ganesh favours should be used.”
+
+The organisers believe these corn cobs which are a part of the idol can bring good fortune to families. “It is not only eco-friendly but if kept at home can be a very good sign,” added Ram Murthy. Devotees from the surrounding areas have been thronging the pandal to offer prayers at the Ganesh idol.</p>
+
+
+                         <h4 id="list-item-7">Hyderabad: Huge Rush of Devotees at Khairatabad Ganesh Pandal</h4>
+
+							   <div class="col-md-12 mt-3">
+			<div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/n7.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+
+
+      <p>Hyderabad: The crowd at Khairatabad is in sync with the size of Ganesh at the city's landmark pandal on Wednesday. Starting today, Devotees can have a glimpse of Maha Ganesh till the immersion day. Over two lakh pandals were set up across the city to celebrate nine-day festivitie.
+
+According to the Bhagyanagar Ganesh Utsava Samithi, pandals were set up in a mass scale this year. As per the data from three police commissionerates, Cyberabad, Hyderabad and Rachakonda,  there were 96,000 pandals. The number has increased by 30 percent this year.
+
+Traffic restrictions near Khairatabad Ganesh pandal and its surroundings will be in place till immersion as per the footfall of the devotees.
+
+The 50-feet tall idol made from clay will appear as Shri Panchamukha Mahalakshmi Ganapati while Tri Shakti Mahagayatri and Shanmukha Subramanya Swamy will appear on either side of Ganapati. For the first time in 60 years, the Khairatabad idol was made from clay keeping in view the Supreme Court verdict and guidance of Telangana government. The making of the idol started in June and 150 artisans were involved in making the statue at a cost of Rs 1.5 crore.</p>
+
+
+                         <h4 id="list-item-8">Tata Memorial Hospital recreated at Ganpati pandal</h4>
+
+								   <div class="col-md-12 mt-3">
+			<div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/n8.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+
+
+      <p>Dombivli: Residents of Balaji Angan Society in Dombivili have come up with a singular Ganpati decoration this year. They have depicted the Tata Memorial Hospital of Mumbai, if only to call attention to the need for a similar facility in Kalyan-Dombivili.
+
+The idea came upon 32-year-old Rupesh Raut after his mother Shubhangi Raut, 58, was diagnosed with breast cancer in May this year. Other residents of the housing society also collaborated in this endeavour.
+
+The pandal depicts the hospital and its surrounding, using eco-friendly material and it took 15 days to set it up.
+
+“It’s a big struggle to reach the hospital in Mumbai or Kharghar,” said Shubhangi. “It is a long commute to Mumbai. It would have been so much easier for us if a similar hospital was there close. People from all over the country come to Tata hospital for cancer treatment.”
+
+“The idea came to me as I am going through the process with my mother, and I want people to be at ease if such a hospital comes up in the city in future,” said her son. “I hope I have been able to relay the message through the decoration.”
+
+Archana Sonde, 33, a resident from the society who participated in the decorations said, “The housing society comes up with noteworthy decorations every year during the Ganesh festival. This time, we wanted to put out a strong message related to health. It would be a big achievement if we are able to make any difference.”
+
+Kalyan (east) resident, Megha Gokhale, 60, who is a breast cancer survivor, dropped by to see the decoration, after coming across a social media post.
+
+“I still travel to Tata Memorial Hospital every six months. In the early days I used to go to the hospital every alternate day. I remember how exhausted I used to be after each chemotherapy and the long commute back home,” she said. “Memories returned as I saw the decorations here.”
+
+Many people from the suburb have appreciated this novel idea. As Rajesh Desai, 38, a Dombivili resident said, “It is essential that we highlight social issues and need for better health facilities through such festivals. People wait at the hospital for days for their turn. We need such hospitals in various cities.”</p>
+
+
+                         <h4 id="list-item-9">Ayodhya Ram temple-themed Ganesh pandal set up in Gujarat</h4>
+
+									      <div class="col-md-12 mt-3">
+			<div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/n9.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+
+      <p>GujaratThe pandal's entrance is an exact replica of the Ayodhya temple's entrance, the organisers claimed</p>
+											  <p>A Ganesh pandal set up on the theme of the under-construction Ram temple in Ayodhya is attracting huge crowds in Gujarat's Surat city, with the organisers saying its pillars and lighting give visitors a feel of actually being inside the temple.
+
+The pandal's entrance is an exact replica of the Ayodhya temple's entrance, they claimed. The sprawling pandal, spread across 125x65 metres area, has been erected on Bhatar road by a group of people engaged in making pandals for the Ganesh Chaturthi festival for the last 25 years.
+
+This year, the 10-day Ganpati festival commenced on Wednesday. "Last year, our pandal was set up on the theme of Jaipur city. This year, we chose the Ram temple in Ayodhya. Through this pandal, we want to thank Prime Minister Narendra Modi for his efforts in realising the dream of all Hindus to have a Ram Mandir in Ayodhya," the main organiser, Kamal Mevawala, told PTI. The pandal was erected at a cost of nearly Rs 60 lakh, which came from donations, he said.
+
+"Inside the pandal, we have put large posters to showcase the life of Lord Ram as depicted in the epic Ramayana. The idol of Lord Ganesh installed in the pandal has been brought from Mumbai. It was created by the artists who make the famous Lalbaugcha Raja Ganesh idol in Mumbai," he said. "It took about two months to build this structure. Based on the photographs available online, we drew the design and then built pillars using fibre and grass. They are painted in such a way that they look like the original temple pillars made of stone," Mevawala said.
+
+The pandal's entrance is an exact replica of the Ram temple's entrance, he said. "The pillars and lighting inside the pandal will give an impression that you are actually inside the temple. Due to the structural limitations, we have not created the shikhar (spire). So the pandal will look like the Ram temple from the front and inside, not outside," he explained.
+
+The pandal has already become an instant hit with nearly 8,000 to 10,000 people visiting it daily, said Mevawala, who is also a property dealer. People who donate cash are given a notebook in return with a request to give it to the needy children, he said.</p>
+
+
+                         <h4 id="list-item-10">Ganesh Chaturthi 2022: The Aadhaar card contains a cut-out inside which an idol of the deity has been placed.</h4>
+
+
+											  <div class="card" style="width:100%;align:center;">
+				<img src="{% static 'asset/img/10.jpeg' %}" class="card-img-top" alt="..." height='400 px'></br>
+
+				<!--<div class="card-body">
+					<h5 class="card-title">Gold </h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>-->
+
+			</div>
+
+
+      <p>Ganesh Chaturthi 2022: Aadhaar card-themed pandal set up in this city with Lord Ganesha's address, date of birth</p>
+   <p>As several cities are celebrating Ganesh Chaturthi with much zeal and enthusiasm, a city in India has prepared a Ganesh pandal in a different way.
+
+Jamshedpur (Jharkhand) has set up a Ganesh pandal in the shape of an Aadhaar card, identifying Lord Ganesha`s address in Kailash and his date of birth during the 6th century to commemorate the occasion of Ganesh Chaturthi.
+
+The Aadhaar card contains a cut-out inside which an idol of the deity has been placed. On scanning the barcode present at its side, a Google link for Lord Ganesha images opens up on the screen.
+
+The address mentioned on it is Shree Ganesh S/o Mahadev, Kailash Parvat, Top Floor, Near, Mansarover, Lake, Kailash Pincode- 000001 and the year of birth says 01/01/600CE.
+
+This Ganesh pandal`s organiser, Sarav Kumar, while speaking to ANI revealed that he got the idea of making this Aadhar card-themed pandal after visiting one in Kolkata, where a Facebook theme pandal had been made.
+
+He said, "One time when I was visiting Kolkata, there, I saw a Facebook pandal. Since I also do Ganesh pooja, it came to my mind that I too should do something unique. Hence, I got the idea of this
+ Aadhar card pandal."
+
+Kumar also aims to give an important message through his unique pandal. He is trying to convey that those who have not got their Aadhar cards made should get it done as soon as possible as it is an important document.
+
+He added, "When God can have an Aadhar card then maybe the people who haven`t had theirs made might get inspired and follow suit." Several people were also spotted enjoying the unique themed Ganesh pandal and clicking photos and selfies with it.
+
+The Ganesh Chaturthi festival is celebrated annually with great enthusiasm in India and thousands of devotees throng temples and `Ganeshotsav pandals` to offer prayers.
+
+This auspicious ten-day celebration, which commenced yesterday, starts with Chaturthi Tithi and ends on Anantha Chaturdashi. Devotees of Lord Ganesh, the god of wisdom and good fortune, mark his birth during the Shukla Paksha of Bhadrapada month.</p>
+
+    </div>
+  </div>
+</div>
+
+		<!-- whatsapp message start here -->
+
+    <section class="cta" id="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+         <!-- <h3>Call To Action</h3> -->
+		  <h3>Contact Us in WhatsApp</h3>
+		  <h3>Have a matter to discuss?</h3>
+          <p>Would you like to learn more about what we do? Do you have a matter you would like to discuss? If so then please submit your response and we will contact you shortly</p>
+          <a class="cta-btn" href="https://api.whatsapp.com/send?phone=919072942825&text=hi"" style="text-decoration:none">Send Message</a>
+        </div>
+
+      </div>
+    </section>
+
+		<!-- whatsapp message end here -->
+
+
+
+
+
+		<div class="col-md-12 text-white ps-3" style="background-color:#121d24;text-align:center;>
+			<ul>
+
+				<p><a href="#" style="text-decoration:none;color:white"></p>
+				<p><a href="#" style="text-decoration:none;color:white;background-color:#121d24;" id="ctafoot">© Copyright IT Vedant Bangalore. All Rights Reserved</p>
+				<p><a href="#" style="text-decoration:none;color:white;background-color:#121d24;" id="ctafoot">Designed Developed and Maintained by Hbct.in</p>
+
+
+			</ul>
+		</div>
+	</div>
+
+
+  </body>
+</html>
